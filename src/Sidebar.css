@@ -1,0 +1,65 @@
+.Sidebar {
+  /* padding: 10px; */
+  height: -webkit-fill-available;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+  left: -202px;
+  transition: 0.5s;
+}
+.Sidebar {
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.Sidebar.active {
+  left: 0;
+}
+.Sidebar::-webkit-scrollbar {
+  background-color: #fff;
+  width: 8px;
+}
+.Sidebar::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+.Sidebar::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  width: 5px;
+  display: none;
+}
+.Sidebar:hover::-webkit-scrollbar-thumb {
+  display: initial;
+}
+.Sidebar .Sidebar > hr {
+  opacity: 50%;
+}
+.Sidebar__left {
+  flex: 0.08;
+  display: none;
+}
+.Sidebar__right {
+  padding: 1vw;
+}
+.SidebarRow {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.SidebarRow:hover {
+  background-color: #eee;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.SidebarRow > .Sidebar__icons {
+  width: 25px;
+  height: 25px;
+}
+.SidebarRow__title {
+  margin-left: 10px;
+  text-overflow: ellipsis;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.SidebarRow__titleoftitle {
+  padding: 10px;
+}

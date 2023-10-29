@@ -1,0 +1,91 @@
+.RecommendedVideos {
+  display: flex;
+  padding-top: 9vh;
+  padding-left: 3vw;
+  top: 0;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+  height: 100%;
+  justify-content: flex-start;
+}
+/* .RecommendedVideos::-webkit-scrollbar-track {
+  height: 10vh;
+} */
+.VideoComponent {
+  width: 346px !important;
+  height: 246px !important;
+  margin-right: 19px;
+  margin-top: 61px;
+}
+.VideoComponent__desc_part {
+  display: flex;
+  margin-top: 8px;
+}
+.VideoComponent__left {
+  /* padding: 10px; */
+  margin-left: 0;
+  margin-right: 10px;
+  height: 100%;
+  position: relative;
+  /* left: 0; */
+}
+.VideoComponent__left > .Avatar {
+  width: 37px;
+  height: 37px;
+}
+.VideoComponent__right {
+  width: 100%;
+}
+.VideoComponent__right > .videoTitle {
+  font-size: 1rem;
+}
+.VideoComponent__right > .channelTitle {
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+.VideoComponent__right > p {
+  color: #606060;
+}
+.timeStamp:before {
+  content: "•";
+  margin: 0 4px;
+}
+.videoThumbnail {
+  /* border-radius: 17px;
+  height: 155px;
+  width: 100%;
+  object-fit: contain; */
+  border-radius: 17px;
+  width: 100%;
+  /* object-fit: contain;*/
+}
+
+/* suggestions styling */
+
+.Suggestions__slider {
+  display: flex;
+  margin-right: 45vw;
+  /* justify-content: space-evenly; */
+}
+.SuggestionRow {
+  margin: 0 5px;
+  height: 35px;
+  background-color: #eee;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+@media (max-width: 426px) {
+  .RecommendedVideos {
+    justify-content: center;
+  }
+  .VideoComponent {
+    width: 100% !important;
+    /* height: 62% !important; */
+    margin-right: 19px;
+    margin-bottom: 20vw;
+  }
+  .videoThumbnail {
+    width: 100%;
+  }
+}

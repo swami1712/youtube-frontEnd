@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Header__container {
+  /* margin-top: 1px; */
+  /* margin-right: 16px; */
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 200;
+  padding: 16px;
+}
+.yt__logo {
+  height: 3.3rem;
+  object-fit: contain;
+}
+.Header__left {
+  display: flex;
+  align-items: center;
+}
+.Header__middle {
+  display: flex;
+  align-items: center;
+}
+.Header__middlePart {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+.Header__middle > .MicIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: #eee;
+}
+.Header__middle > .MicIcon:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+.Header__middlePart > input {
+  display: none;
+}
+.Header__middlePart > .SearchIcon {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.Header__right {
+  display: flex;
+  align-items: center;
+}
+
+.Header__icons {
+  margin-right: 15px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+}
+.Header__icons:hover {
+  background-color: #eee;
+  border-radius: 20px;
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  .Header__middle {
+    width: 40%;
+    height: 130%;
+  }
+  .Header__middlePart {
+    flex: 1 1;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 2px #eee;
+    border-radius: 20px;
+    margin-right: 8px;
+    height: 94%;
+  }
+  .Header__middlePart > input {
+    display: block;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    padding-left: 10px;
+    width: 20%;
+    height: 60%;
+    flex: 1;
+  }
+  .Header__middlePart > .SearchIcon {
+    background-color: #f8f8f8;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-right: 0;
+  }
+  .Header__middle > .MicIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+  }
+}
